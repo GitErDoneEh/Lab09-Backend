@@ -24,8 +24,8 @@ class Application extends CI_Controller
 		$this->data = array ();
 
 		// get the user role
-		$this->data['userrole'] = $this->session->userdata('userrole');
-		if ($this->data['userrole'] == NULL) $this->data['userrole'] = '?';		//  Set basic view parameters
+		//$this->data['userrole'] = $this->session->userdata('userrole');
+		//if ($this->data['userrole'] == NULL) $this->data['userrole'] = '?';		//  Set basic view parameters
 		$this->data['pagetitle'] = 'The Wilsons';
 		$this->data['ci_version'] = (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : '';
 	}
